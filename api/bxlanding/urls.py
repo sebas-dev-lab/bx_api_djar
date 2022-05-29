@@ -11,5 +11,7 @@ urlpatterns = [
     path('abSection/', getAboutSectionAll),
     path('abSection/<int:id>/', getAboutSection),
     path('abSection/save/', createNewAboutSection),
-
+    path('shSection/', getAllShowSection),
+    path('shSection/<int:id>/', getOneShowSectionById),
+    path('shSection/save/', createShowSection),
 ]

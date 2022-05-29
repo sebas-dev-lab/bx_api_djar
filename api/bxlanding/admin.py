@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import FirstSectionModel, AboutSectionModel
+from .models import *
 
 admin.site.register(FirstSectionModel)
 admin.site.register(AboutSectionModel)
+admin.site.register(ShowSectionModel)
