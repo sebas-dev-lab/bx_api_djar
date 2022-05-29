@@ -1,1 +1,2 @@
-from .submodels.model1 import *
+from .submodels.fsmodel import *
+from .submodels.abmodel import *
