@@ -5,13 +5,16 @@ app_name = "bxlanding"
 
 
 urlpatterns = [
-    path('firstSection/', getAll),
-    path('firstSection/<int:id>/', getOne),
-    path('firstSection/save/', post),
+    path('fsSection/', getAll),
+    path('fsSection/<int:id>/', getOne),
+    path('fsSection/save/', post),
     path('abSection/', getAboutSectionAll),
     path('abSection/<int:id>/', getAboutSection),
     path('abSection/save/', createNewAboutSection),
     path('shSection/', getAllShowSection),
     path('shSection/<int:id>/', getOneShowSectionById),
     path('shSection/save/', createShowSection),
+    path('prSection/', getAllPresentation),
+    path('prSection/<int:id>/', getOnePresentation),
+    path('prSection/save/', createNewPresentation),
 ]
