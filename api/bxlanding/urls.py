@@ -1,9 +1,11 @@
 from django.urls import path
-from .views import FirsSectionView
+from .views import getAll, getOne, post
 
 app_name = "bxlanding"
 
+
 urlpatterns = [
-    path('firstSection/', FirsSectionView.as_view()),
-    path('firstSection/save/', FirsSectionView.as_view()),
+    path('firstSection/', getAll),
+    path('firstSection/<int:id>/', getOne),
+    path('firstSection/save/', post),
 ]
