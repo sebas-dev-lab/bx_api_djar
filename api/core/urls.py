@@ -9,6 +9,8 @@ urlpatterns = [
     path('api/v1/blog/', include('blog.urls', namespace='blog')),
     path('api-auth/', include('rest_framework.urls')),
     path('api/v1/', include('bxlanding.urls')),
+    path('api/v1/auth-data/', include('authorization.urls')),
+
 ]
 
 if settings.DEBUG:
